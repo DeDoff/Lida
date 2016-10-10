@@ -4,10 +4,11 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    @*<link rel="stylesheet" href="~/Content/Site.css">*@
 
     <title>@ViewBag.Title БЛОКНОТЫ</title>
 
+    @Styles.Render("~/Content/Site.css")
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
@@ -15,44 +16,41 @@
 
 
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<body>
+    <div class="navbar-fixed-top navbar-header">
+        <div>
+            <img src="~/Source/title.bmp" alt="Logo" class="img-responsive pic" />
+        </div>    
+        <div class="navbar  navbar-inverse navbar-collapse collapse">
 
-    <div class="container">
-        <div class="navbar-fixed-top navbar-header">
-            <div>
-                <img src="~/Source/title.bmp" alt="Logo" class="img-responsive" />
-            </div>
-            <div class="navbar navbar-inverse navbar-collapse collapse">
-
-                <div class="container">
-                    <ul class="nav navbar-nav">
-                        <li><a href="#sectionAbout">О проекте</a></li>
-                        <li><a href="#sectionProduct">Изделия</a></li>
-                        <li><a href="#sectionGallery">Галерея</a></li>
-                        <li><a href="#sectionContact">Как связаться</a></li>
-                    </ul>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="navbar-fixed-bottom">
-            <div class="container body-content">
-
-                <hr />
-                <footer>
-                    <p>&copy; @DateTime.Now.Year – приложение ASP.NET</p>
-                </footer>
+            <div class="container">
+                <ul class="nav navbar-nav">
+                    <li><a href="#sectionAbout">О проекте</a></li>
+                    <li><a href="#sectionProduct">Изделия</a></li>
+                    <li><a href="#sectionGallery">Галерея</a></li>
+                    <li><a href="#sectionContact">Как связаться</a></li>
+                </ul>
             </div>
         </div>
 
-
-
-
     </div>
-    <div class="BasicPadding">
-        @RenderBody()
+
+    <div class="navbar-fixed-bottom">
+        <div class="container body-content">
+
+            <hr />
+            <footer>
+                <p>&copy; @DateTime.Now.Year – приложение ASP.NET</p>
+            </footer>
+        </div>
     </div>
+
+
+
+
+
+
+    @RenderBody()
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
