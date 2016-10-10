@@ -1,25 +1,29 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+
     <title>@ViewBag.Title БЛОКНОТЫ</title>
-    
+
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
 </head>
 
- 
 
-<body  data-spy="scroll" data-target=".navbar" data-offset="50">
-    
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
     <div class="container">
         <div class="navbar-fixed-top navbar-header">
-            <div class="navbar navbar-inverse navbar-collapse collapse">
+            <div>
                 <img src="~/Source/title.bmp" alt="Logo" class="img-responsive" />
+            </div>
+            <div class="navbar navbar-inverse navbar-collapse collapse">
+
                 <div class="container">
                     <ul class="nav navbar-nav">
                         <li><a href="#sectionAbout">О проекте</a></li>
@@ -29,28 +33,28 @@
                     </ul>
                 </div>
             </div>
-        <div class="container">
-            @RenderBody()
+
         </div>
+
+        <div class="navbar-fixed-bottom">
+            <div class="container body-content">
+
+                <hr />
+                <footer>
+                    <p>&copy; @DateTime.Now.Year – приложение ASP.NET</p>
+                </footer>
+            </div>
         </div>
-    
-    <div class="navbar-fixed-bottom">
-        <div class="container body-content">
-            
-            <hr />
-            <footer>
-                <p>&copy; @DateTime.Now.Year – приложение ASP.NET</p>
-            </footer>
-        </div>
+
+
+
+
     </div>
-
-
-
-      
+    <div class="BasicPadding">
+        @RenderBody()
     </div>
-           
-            @Scripts.Render("~/bundles/jquery")
-            @Scripts.Render("~/bundles/bootstrap")
-            @RenderSection("scripts", required: false)
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
 </body>
 </html>
