@@ -18,10 +18,8 @@
 .pic {
     padding-left:20%;
 }
-#sectionAbout {padding-top:200px;height:500px;color: #fff; background-color: #1E88E5;}
-#sectionProduct {padding-top:200px;height:500px;color: #fff; background-color: #673ab7;}
-#sectionGallery {padding-top:200px;height:500px;color: #fff; background-color: #ff9800;}
-#sectionContact {padding-top:200px;height:500px;color: #fff; background-color: #00bcd4;}
+
+
 
 
 /* Set width on the form input elements since they're 100% wide by default */
