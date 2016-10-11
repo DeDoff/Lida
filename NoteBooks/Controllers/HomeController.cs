@@ -26,5 +26,11 @@ namespace NoteBooks.Controllers
 
             return View();
         }
+        public ActionResult Gallery()
+        {
+            ViewBag.Message = "Gallery";
+
+            return View();
+        }
     }
 }

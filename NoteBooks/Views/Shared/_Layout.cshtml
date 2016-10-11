@@ -16,7 +16,7 @@
 
 
 
-<body data-spy="scroll" data-target=".navbar" data-offset="10">
+<body>
     <div class="navbar-header navbar-fixed-top">
         <div>
             <img src="~/Source/title.bmp" alt="Logo" class="img-responsive pic" />
@@ -29,6 +29,7 @@
                     <li><a href="#sectionProduct">Изделия</a></li>
                     <li><a href="#sectionGallery">Галерея</a></li>
                     <li><a href="#sectionContact">Как связаться</a></li>
+                    <li>@Html.ActionLink("Галерея", "Gallery", "Home")</li>
                 </ul>
             </div>
         </div>
