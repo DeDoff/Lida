@@ -32,5 +32,11 @@ namespace NoteBooks.Controllers
 
             return View();
         }
+        public ActionResult Product()
+        {
+            ViewBag.Message = "Product";
+
+            return View();
+        }
     }
 }

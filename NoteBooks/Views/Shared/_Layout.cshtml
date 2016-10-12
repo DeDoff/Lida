@@ -19,17 +19,19 @@
 <body>
     <div class="navbar-header navbar-fixed-top">
         <div>
-            <img src="~/Source/title.bmp" alt="Logo" class="img-responsive pic" />
+            <a href="/home/Index">
+                <img src="~/Source/title.bmp" alt="Logo" class="img-responsive pic" />
+            </a>
+            
         </div>
         <div class="navbar  navbar-inverse navbar-collapse collapse">
 
             <div class="container">
                 <ul class="nav navbar-nav">
-                    <li><a href="#sectionAbout">О проекте</a></li>
-                    <li><a href="#sectionProduct">Изделия</a></li>
-                    <li><a href="#sectionGallery">Галерея</a></li>
-                    <li><a href="#sectionContact">Как связаться</a></li>
-                    <li>@Html.ActionLink("Галерея", "Gallery", "Home")</li>
+                    <li class="NavbarLi">@Html.ActionLink("О ПРОЕКТЕ", "About", "Home")</li>
+                    <li class="NavbarLi">@Html.ActionLink("ИЗДЕЛИЯ", "Product", "Home")</li>
+                    <li class="NavbarLi">@Html.ActionLink("ГАЛЕРЕЯ РАБОТ", "Gallery", "Home")</li>
+                    <li class="NavbarLi">@Html.ActionLink("КАК ЗАКАЗАТЬ", "Contact", "Home")</li>
                 </ul>
             </div>
         </div>
