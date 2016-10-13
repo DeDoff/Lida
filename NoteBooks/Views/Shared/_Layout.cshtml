@@ -4,11 +4,12 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    @*<link rel="stylesheet" href="~/Content/Site.css">*@
 
     <title>@ViewBag.Title БЛОКНОТЫ</title>
 
+    
     @Styles.Render("~/Content/Site.css")
+    @Styles.Render("~/Content/font-awesome.css")
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
@@ -22,7 +23,7 @@
             <a href="/home/Index">
                 <img src="~/Source/title.bmp" alt="Logo" class="img-responsive pic" />
             </a>
-            
+
         </div>
         <div class="navbar  navbar-inverse navbar-collapse collapse">
 
@@ -39,11 +40,32 @@
 
 
     <div class="navbar-fixed-bottom">
-        <div class="container body-content">
-
+        <div class="container body-content text-center">
             <hr />
             <footer>
-                <p>&copy; @DateTime.Now.Year – приложение ASP.NET</p>
+
+                <a class="btn Icon">
+                    <i class="fa fa-3x fa-facebook-official" aria-hidden="true"></i>
+                </a>
+                <a class="btn Icon">
+                    <i class="fa fa-3x fa-vk" aria-hidden="true"></i>
+                </a>
+
+                <a class="btn Icon">
+                    <i class="fa fa-3x fa-instagram" aria-hidden="true"></i>
+                </a>
+
+                <a class="btn Icon">
+                    <i class="fa fa-3x fa-envelope-o" aria-hidden="true"></i>
+                </a>
+
+                <a class="btn Icon">
+                    <i class="fa fa-3x fa-usd" aria-hidden="true"></i>
+                </a>
+                <a class="btn Icon">
+                    <i class="fa fa-3x fa-phone-square" aria-hidden="true"></i>
+                </a>
+
             </footer>
         </div>
     </div>
