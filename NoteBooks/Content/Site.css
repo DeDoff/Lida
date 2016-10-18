@@ -42,8 +42,23 @@
 
 .NavbarLi {
     width: 25%;
+    text-align: center;
+    font-size:16px;
+    font-weight:800;
 }
 
+.NavbarPadding {
+   padding-left: 50px;  
+}
+
+.ContactPadding {
+    padding-left:10px;
+    padding-right:10px;
+}
+.ProductPage {
+    border:ridge;
+    border-color:burlywood;
+}
 /* Set width on the form input elements since they're 100% wide by default */
 input,
 select,
