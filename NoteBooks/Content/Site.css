@@ -18,12 +18,23 @@
 .pic {
     padding-left:20%;
 }
+.body {
+     background-color: #A65400;
+}
+.scrol {
+    overflow-y:scroll;
+    overflow-x: hidden;
+    
+}
 
+::-webkit-scrollbar {
+display: none;
+}
 
 .BasicPadding {
     padding-top: 200px;
     padding-left:75px;
-    padding-right:75px;
+    padding-right:75px;   
 }
 .navbar-nav {
     display: table;
@@ -34,9 +45,11 @@
     width: 75px;
 }
 .Icon{
-    color: darkslategrey;
+    /*color: darkslategrey;*/
     padding-right: 15px;
     padding-left: 15px;
+    /*background-color: whitesmoke;*/
+    color:black;
 }
 
 
@@ -54,7 +67,12 @@
 .ContactPadding {
     padding-left:10px;
     padding-right:10px;
+    padding-bottom: 20px;
 }
+.ContactScroll{
+    /*padding-bottom: 50px;*/
+}
+
 .ProductPage {
     border:ridge;
     border-color:burlywood;
