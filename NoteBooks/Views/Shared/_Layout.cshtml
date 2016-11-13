@@ -18,15 +18,14 @@
 
 
 <body class="body">
-    <div class="navbar-header navbar-fixed-top">
-        <div>
-            <a href="/home/Index">
-                <img src="~/Source/title.bmp" alt="Logo" class="img-responsive pic" />
-            </a>
 
+    <div class="navbar-header navbar-fixed-top">
+        <div class="container">
+            <a href="/home/Index">
+                <img src="~/Source/Лого.jpg" alt="Logo" class="img-responsive pic" />
+            </a>
         </div>
         <div class="navbar  navbar-inverse navbar-collapse collapse">
-
             <div class="container">
                 <ul class="nav navbar-nav NavbarPadding">
                     <li class="NavbarLi">@Html.ActionLink("О ПРОЕКТЕ", "About", "Home")</li>
@@ -38,12 +37,11 @@
         </div>
     </div>
 
+    <div class="container">
+        <div class="navbar-fixed-bottom">
 
-    <div class="navbar-fixed-bottom">
-        <div class="container body-content text-center">
-
-            <footer>
-                <hr />
+            <hr />
+            <div class="row body-content text-center">
                 <a class="btn Icon">
                     <i class="fa fa-3x fa-facebook-official" aria-hidden="true"></i>
                 </a>
@@ -65,7 +63,7 @@
                 <a class="btn Icon">
                     <i class="fa fa-3x fa-phone-square" aria-hidden="true"></i>
                 </a>
-            </footer>
+            </div>
         </div>
     </div>
 

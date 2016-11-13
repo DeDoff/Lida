@@ -1,5 +1,4 @@
 ﻿body {
-    /*padding-top: 10px;*/
     padding-bottom: 20px;
 }
 
@@ -32,7 +31,7 @@ display: none;
 }
 
 .BasicPadding {
-    padding-top: 200px;
+    padding-top: 210px;
     padding-left:75px;
     padding-right:75px;   
 }
@@ -43,6 +42,7 @@ display: none;
 
 .courusel {
     width: 75px;
+    height: 100%;
 }
 .Icon{
     /*color: darkslategrey;*/
@@ -84,3 +84,17 @@ textarea {
     max-width: 280px;
 }
 
+.FotterPading {
+    padding-bottom: 50px;
+}
+
+img {
+    max-height: inherit;
+    height: auto;
+    width: auto;
+    display: block;
+}
+hr{
+    margin: unset;
+    padding:unset;
+}
