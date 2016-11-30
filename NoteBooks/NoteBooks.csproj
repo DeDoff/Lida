@@ -209,10 +209,8 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Source\MainPage.jpg" />
-    <Content Include="Source\MainPageText.png" />
-    <Content Include="Source\title.bmp" />
-    <Content Include="Source\Лого.jpg" />
+    <Content Include="Source\About.jpg" />
+    <Content Include="Source\MainPageLogo.jpg" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

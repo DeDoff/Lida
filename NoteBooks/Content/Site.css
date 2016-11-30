@@ -1,5 +1,5 @@
 ﻿body {
-    padding-bottom: 20px;
+    padding-bottom: 40px;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -14,11 +14,13 @@
 .dl-horizontal dt {
     white-space: normal;
 }
-.pic {
+/*.pic {
     padding-left:20%;
-}
+}*/
 .body {
-     background-color: #A65400;
+     /*background-color: #A65400;*/
+     background-color: white;
+     padding-bottom: 40px;
 }
 .scrol {
     overflow-y:scroll;
@@ -33,7 +35,8 @@ display: none;
 .BasicPadding {
     padding-top: 210px;
     padding-left:75px;
-    padding-right:75px;   
+    padding-right:75px;  
+    padding-bottom: 50px; 
 }
 .navbar-nav {
     display: table;
@@ -58,6 +61,7 @@ display: none;
     text-align: center;
     font-size:16px;
     font-weight:800;
+    color: white;
 }
 
 .NavbarPadding {
@@ -97,4 +101,25 @@ img {
 hr{
     margin: unset;
     padding:unset;
+    color: black;
+}
+.Logo {
+    padding-top: 10px;
+    padding-left: 0;
+    padding-right: 0;
+    font-size: xx-large;
+    color: white;
+    letter-spacing:10px;
+}
+.LogoBottom {
+    padding-top: 5px;
+    padding-left: 0;
+    padding-right: 0;
+    font-size: large;
+    color: white;
+    letter-spacing:5px;
+}
+.Text {
+    text-align:justify;
+    font-size:medium;
 }
