@@ -2,23 +2,16 @@
     padding-bottom: 40px;
 }
 
-/* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
 }
 
-/* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
-*/
 .dl-horizontal dt {
     white-space: normal;
 }
-/*.pic {
-    padding-left:20%;
-}*/
+
 .body {
-     /*background-color: #A65400;*/
      background-color: white;
      padding-bottom: 40px;
 }
@@ -33,7 +26,7 @@ display: none;
 }
 
 .BasicPadding {
-    padding-top: 210px;
+    padding-top: 190px;
     padding-left:75px;
     padding-right:75px;  
     padding-bottom: 50px; 
@@ -72,9 +65,8 @@ display: none;
     padding-left:10px;
     padding-right:10px;
     padding-bottom: 20px;
-}
-.ContactScroll{
-    /*padding-bottom: 50px;*/
+    padding-top: 20px;
+    text-align: justify;
 }
 
 .ProductPage {
@@ -122,4 +114,10 @@ hr{
 .Text {
     text-align:justify;
     font-size:medium;
+}
+
+.ContactList {
+    background-color:black;
+    color:white;
+    font-size:large;
 }
