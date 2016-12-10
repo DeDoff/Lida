@@ -12,25 +12,26 @@
 }
 
 .body {
-     background-color: white;
-     padding-bottom: 40px;
+    background-color: white;
+    padding-bottom: 40px;
 }
+
 .scrol {
-    overflow-y:scroll;
+    overflow-y: scroll;
     overflow-x: hidden;
-    
 }
 
 ::-webkit-scrollbar {
-display: none;
+    display: none;
 }
 
 .BasicPadding {
-    padding-top: 190px;
-    padding-left:75px;
-    padding-right:75px;  
-    padding-bottom: 50px; 
+    padding-top: 120px;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-bottom: 50px;
 }
+
 .navbar-nav {
     display: table;
     width: 100%;
@@ -40,38 +41,39 @@ display: none;
     width: 75px;
     height: 100%;
 }
-.Icon{
+
+.Icon {
     /*color: darkslategrey;*/
     padding-right: 15px;
     padding-left: 15px;
     /*background-color: whitesmoke;*/
-    color:black;
+    color: black;
 }
 
 
 .NavbarLi {
     width: 25%;
     text-align: center;
-    font-size:16px;
-    font-weight:800;
+    font-size: 16px;
+    font-weight: 800;
     color: white;
 }
 
 .NavbarPadding {
-   padding-left: 50px;  
+    padding-left: 50px;
 }
 
 .ContactPadding {
-    padding-left:10px;
-    padding-right:10px;
+    padding-left: 10px;
+    padding-right: 10px;
     padding-bottom: 20px;
     padding-top: 20px;
     text-align: justify;
 }
 
 .ProductPage {
-    border:ridge;
-    border-color:burlywood;
+    border: ridge;
+    border-color: burlywood;
 }
 /* Set width on the form input elements since they're 100% wide by default */
 input,
@@ -90,34 +92,57 @@ img {
     width: auto;
     display: block;
 }
-hr{
+
+hr {
     margin: unset;
-    padding:unset;
+    padding: unset;
     color: black;
 }
+
 .Logo {
     padding-top: 10px;
     padding-left: 0;
     padding-right: 0;
     font-size: xx-large;
     color: white;
-    letter-spacing:10px;
+    letter-spacing: 10px;
 }
+
 .LogoBottom {
     padding-top: 5px;
     padding-left: 0;
     padding-right: 0;
     font-size: large;
     color: white;
-    letter-spacing:5px;
+    letter-spacing: 5px;
 }
+
 .Text {
-    text-align:justify;
-    font-size:medium;
+    text-align: justify;
+    font-size: medium;
 }
 
 .ContactList {
-    background-color:black;
-    color:white;
-    font-size:large;
+    background-color: black;
+    color: white;
+    font-size: large;
+}
+
+
+.thumb img {
+    filter: none; 
+    -webkit-filter: grayscale(0);
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 5px;
+}
+
+.thumb img:hover {
+    filter: gray; 
+    -webkit-filter: grayscale(1);
+}
+
+.thumb {
+    padding: 5px;
 }

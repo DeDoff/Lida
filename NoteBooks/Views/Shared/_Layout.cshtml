@@ -7,9 +7,12 @@
 
     <title>@ViewBag.Title БЛОКНОТЫ</title>
 
+    
+   
 
     @Styles.Render("~/Content/Site.css")
     @Styles.Render("~/Content/font-awesome.css")
+    @Styles.Render("~/Content/jquery.fancybox.css")
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
@@ -75,6 +78,7 @@
     @RenderBody()
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
+    
     @RenderSection("scripts", required: false)
 </body>
 </html>

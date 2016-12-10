@@ -185,6 +185,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
+    <Content Include="Content\jquery.fancybox.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
@@ -201,6 +202,7 @@
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.fancybox.pack.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
@@ -210,6 +212,16 @@
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Source\About.jpg" />
+    <Content Include="Source\diarys\B_1.png" />
+    <Content Include="Source\diarys\B_2.png" />
+    <Content Include="Source\diarys\B_3.png" />
+    <Content Include="Source\diarys\B_4.png" />
+    <Content Include="Source\diarys\B_5.png" />
+    <Content Include="Source\diarys\Pic_1.png" />
+    <Content Include="Source\diarys\Pic_3.png" />
+    <Content Include="Source\diarys\Pic_4.png" />
+    <Content Include="Source\diarys\Pic_5.png" />
+    <Content Include="Source\diarys\_IGP0426.jpg" />
     <Content Include="Source\MainPageLogo.jpg" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -250,6 +262,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Source\folders\" />
+    <Folder Include="Source\jotters\" />
+    <Folder Include="Source\NoteBooks\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
