@@ -1,5 +1,5 @@
 ﻿body {
-    padding-bottom: 40px;
+    padding-bottom: 10px;
 }
 
 .body-content {
@@ -13,7 +13,7 @@
 
 .body {
     background-color: white;
-    padding-bottom: 40px;
+    padding-bottom: 10px;
 }
 
 .scrol {
@@ -29,7 +29,6 @@
     padding-top: 120px;
     padding-left: 75px;
     padding-right: 75px;
-    padding-bottom: 50px;
 }
 
 .navbar-nav {
@@ -39,7 +38,7 @@
 
 .courusel {
     width: 75px;
-    height: 100%;
+    height: inherit;
 }
 
 .Icon {
@@ -83,7 +82,7 @@ textarea {
 }
 
 .FotterPading {
-    padding-bottom: 50px;
+    padding-bottom: 20px;
 }
 
 img {
@@ -134,8 +133,10 @@ hr {
     -webkit-filter: grayscale(0);
     border-radius: 5px;
     background-color: #fff;
-    border: 1px solid #ddd;
+    /*border: 1px solid #ddd;*/
+    border: none;
     padding: 5px;
+    
 }
 
 .thumb img:hover {

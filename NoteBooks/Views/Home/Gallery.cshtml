@@ -5,84 +5,216 @@
 @section Scripts {
     @Scripts.Render("~/Scripts/jquery.fancybox.pack.js")
     <script type="text/javascript">
-    $(document).ready(function() {
-      $("a.fancyimage").fancybox();
-    });
-</script> 
+        $(document).ready(function () {
+            $("a.fancyimage").fancybox();
+        });
+    </script>
 }
 <div class="BasicPadding">
     <div class="container">
-        <div class="row text-center">
-            <h2>
-                ЕЖЕДНЕВНИКИ
-            </h2>
-        </div>
+        <div class="scrol pre-scrollable">
+            <div class="row text-center">
+                <h2>
+                    ЕЖЕДНЕВНИКИ
+                </h2>
+            </div>
 
-        <div class="row">
-            <div class="col-md-4 col-sm-4 col-xs-6 thumb">
-                <a class="fancyimage" data-fancybox-group="group" href="~/Source/diarys/B_1.png">
-                    <img class="img-responsive" src="~/Source/diarys/B_1.png" />
-                </a> 
-            </div>
-            <div class="col-md-4 col-sm-4 col-xs-6 thumb">
-                <a class="fancyimage" data-fancybox-group="group" href="~/Source/diarys/B_3.png">
-                    <img class="img-responsive" src="~/Source/diarys/B_3.png" />
-                </a> 
-                
-            </div>
-            <div class="col-md-4 col-sm-4 col-xs-6 thumb">
-                <a class="fancyimage" data-fancybox-group="group" href="~/Source/diarys/B_5.png">
-                    <img class="img-responsive" src="~/Source/diarys/B_5.png" />
-                </a> 
-                
-            </div>
-        </div>
-        <br>
-        <div class="row">
-            <div class="col-md-4 col-sm-4 col-xs-6 thumb">
-                <a class="fancyimage" data-fancybox-group="group" href="~/Source/diarys/B_2.png">
-                    <img class="img-responsive" src="~/Source/diarys/B_2.png" />
-                </a> 
-                
-            </div>
-            <div class="col-md-4 col-sm-4 col-xs-6 thumb">
-                <a class="fancyimage" data-fancybox-group="group" href="~/Source/diarys/B_4.png">
-                    <img class="img-responsive" src="~/Source/diarys/B_4.png" />
-                </a> 
-            </div>
-            <div class="col-md-4 col-sm-4 col-xs-6 thumb">
-                <a class="fancyimage" data-fancybox-group="group" href="~/Source/diarys/Pic_1.png">
-                    <img class="img-responsive" src="~/Source/diarys/Pic_1.png" />
-                </a> 
-                
-            </div>
-        </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-4 col-xs-6 thumb">
+                    <a class="fancyimage" data-fancybox-group="group" href="~/Source/diarys/B_1.png">
+                        <img class="img-responsive" src="~/Source/Little/diarys/B_1.png" />
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-6 thumb">
+                    <a class="fancyimage" data-fancybox-group="group" href="~/Source/diarys/B_3.png">
+                        <img class="img-responsive" src="~/Source/Little/diarys/B_3.png" />
+                    </a>
 
-        <div class="row text-center">
-            <h2>
-                БЛОКНОТЫ
-            </h2>
-        </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-6 thumb">
+                    <a class="fancyimage" data-fancybox-group="group" href="~/Source/diarys/B_5.png">
+                        <img class="img-responsive" src="~/Source/Little/diarys/B_5.png" />
+                    </a>
 
-        <div class="row text-center">
-            <h2>
-                ПАПКИ
-            </h2>
-        </div>
-        <div class="row text-center">
-            <h2>
-                ЗАПИСНЫЕ КНИГИ
-            </h2>
-        </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-4 col-sm-4 col-xs-6 thumb">
+                    <a class="fancyimage" data-fancybox-group="group" href="~/Source/diarys/B_2.png">
+                        <img class="img-responsive" src="~/Source/Little/diarys/B_2.png" />
+                    </a>
 
-        <a class="left carousel-control courusel" href="/home/Product" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left" @*aria-hidden="true"*@></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control courusel" href="/home/Contact" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right" @*aria-hidden="true"*@></span>
-            <span class="sr-only">Next</span>
-        </a>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-6 thumb">
+                    <a class="fancyimage" data-fancybox-group="group" href="~/Source/diarys/B_4.png">
+                        <img class="img-responsive" src="~/Source/Little/diarys/B_4.png" />
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-6 thumb">
+                    <a class="fancyimage" data-fancybox-group="group" href="~/Source/diarys/Pic_1.png">
+                        <img class="img-responsive" src="~/Source/Little/diarys/Pic_1.png" />
+                    </a>
+
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-4 col-sm-4 col-xs-6 thumb">
+                    <a class="fancyimage" data-fancybox-group="group" href="~/Source/diarys/Pic_3.png">
+                        <img class="img-responsive" src="~/Source/Little/diarys/Pic_3.png" />
+                    </a>
+
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-6 thumb">
+                    <a class="fancyimage" data-fancybox-group="group" href="~/Source/diarys/Pic_4.png">
+                        <img class="img-responsive" src="~/Source/Little/diarys/Pic_4.png" />
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-6 thumb">
+                    <a class="fancyimage" data-fancybox-group="group" href="~/Source/diarys/Pic_5.png">
+                        <img class="img-responsive" src="~/Source/Little/diarys/Pic_5.png" />
+                    </a>
+
+                </div>
+            </div>
+            <br>
+            <div class="row text-center">
+                <h2>
+                    БЛОКНОТЫ
+                </h2>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 col-sm-4 col-xs-6 thumb">
+                    <a class="fancyimage" data-fancybox-group="group" href="~/Source/jotters/_IGP0412.jpg">
+                        <img class="img-responsive" src="~/Source/Little/jotters/_IGP0412.jpg" />
+                    </a>
+
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-6 thumb">
+                    <a class="fancyimage" data-fancybox-group="group" href="~/Source/jotters/_IGP0413.jpg">
+                        <img class="img-responsive" src="~/Source/Little/jotters/_IGP0413.jpg" />
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-6 thumb">
+                    <a class="fancyimage" data-fancybox-group="group" href="~/Source/jotters/_IGP0420.jpg">
+                        <img class="img-responsive" src="~/Source/Little/jotters/_IGP0420.jpg" />
+                    </a>
+
+                </div>
+            </div>
+            <br>
+
+            <div class="row">
+                
+                <div class="col-md-4 col-sm-4 col-xs-6 thumb">
+                    <a class="fancyimage" data-fancybox-group="group" href="~/Source/jotters/_IGP0539.jpg">
+                        <img class="img-responsive" src="~/Source/Little/jotters/_IGP0539.jpg" />
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-6 thumb">
+                    <a class="fancyimage" data-fancybox-group="group" href="~/Source/jotters/casual 3.png">
+                        <img class="img-responsive" src="~/Source/Little/jotters/casual 3.png" />
+                    </a>
+
+                </div>
+
+                <div class="col-md-4 col-sm-4 col-xs-6 thumb">
+                    <a class="fancyimage" data-fancybox-group="group" href="~/Source/jotters/casual 2.png">
+                        <img class="img-responsive" src="~/Source/Little/jotters/casual 2.png" />
+                    </a>
+                </div>
+            </div>
+            <br>
+
+            <div class="row">
+                <div class="col-md-4 col-sm-4 col-xs-6 thumb">
+                    <a class="fancyimage" data-fancybox-group="group" href="~/Source/jotters/casual 1.png">
+                        <img class="img-responsive" src="~/Source/Little/jotters/casual 1.png" />
+                    </a>
+
+                </div>
+                
+                <div class="col-md-4 col-sm-4 col-xs-6 thumb">
+                    <a class="fancyimage" data-fancybox-group="group" href="~/Source/jotters/casual 4.png">
+                        <img class="img-responsive" src="~/Source/Little/jotters/casual 4.png" />
+                    </a>
+
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-6 thumb">
+                    <a class="fancyimage" data-fancybox-group="group" href="~/Source/jotters/_IGP0679.jpg">
+                        <img class="img-responsive" src="~/Source/Little/jotters/_IGP0679.jpg" />
+                    </a>
+                </div>
+            </div>
+            <br>
+
+            <div class="row text-center">
+                <h2>
+                    ПАПКИ
+                </h2>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 col-sm-4 col-xs-6 thumb">
+                    <a class="fancyimage" data-fancybox-group="group" href="~/Source/folders/_IGP0544.jpg">
+                        <img class="img-responsive" src="~/Source/Little/folders/_IGP0544.jpg" />
+                    </a>
+
+                </div>
+
+                <div class="col-md-4 col-sm-4 col-xs-6 thumb">
+                    <a class="fancyimage" data-fancybox-group="group" href="~/Source/folders/_IGP0561.jpg">
+                        <img class="img-responsive" src="~/Source/Little/folders/_IGP0561.jpg" />
+                    </a>
+
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-6 thumb">
+                    <a class="fancyimage" data-fancybox-group="group" href="~/Source/folders/_IGP0565.jpg">
+                        <img class="img-responsive" src="~/Source/Little/folders/_IGP0565.jpg" />
+                    </a>
+                </div>
+            </div>
+            <br>
+
+            <div class="row">
+                <div class="col-md-4 col-sm-4 col-xs-6 thumb">
+                    <a class="fancyimage" data-fancybox-group="group" href="~/Source/folders/_IGP0556.jpg">
+                        <img class="img-responsive" src="~/Source/Little/folders/_IGP0556.jpg" />
+                    </a>
+
+                </div>
+
+                <div class="col-md-4 col-sm-4 col-xs-6 thumb">
+                    <a class="fancyimage" data-fancybox-group="group" href="~/Source/folders/_IGP0489.jpg">
+                        <img class="img-responsive" src="~/Source/Little/folders/_IGP0489.jpg" />
+                    </a>
+
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-6 thumb">
+                    <a class="fancyimage" data-fancybox-group="group" href="~/Source/folders/_IGP0580.jpg">
+                        <img class="img-responsive" src="~/Source/Little/folders/_IGP0580.jpg" />
+                    </a>
+                </div>
+            </div>
+            <br>
+
+            <div class="row text-center">
+                <h2>
+                    ЗАПИСНЫЕ КНИГИ
+                </h2>
+            </div>
+
+            <a class="left carousel-control courusel" href="/home/Product" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" @*aria-hidden="true"*@></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control courusel" href="/home/Contact" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" @*aria-hidden="true"*@></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
     </div>
 </div>
 

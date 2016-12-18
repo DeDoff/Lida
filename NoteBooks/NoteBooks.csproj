@@ -222,6 +222,52 @@
     <Content Include="Source\diarys\Pic_4.png" />
     <Content Include="Source\diarys\Pic_5.png" />
     <Content Include="Source\diarys\_IGP0426.jpg" />
+    <Content Include="Source\folders\_IGP0489.jpg" />
+    <Content Include="Source\folders\_IGP0544.jpg" />
+    <Content Include="Source\folders\_IGP0556.jpg" />
+    <Content Include="Source\folders\_IGP0561.jpg" />
+    <Content Include="Source\folders\_IGP0565.jpg" />
+    <Content Include="Source\folders\_IGP0576.jpg" />
+    <Content Include="Source\folders\_IGP0580.jpg" />
+    <Content Include="Source\jotters\casual 1.png" />
+    <Content Include="Source\jotters\casual 2.png" />
+    <Content Include="Source\jotters\casual 3.png" />
+    <Content Include="Source\jotters\casual 4.png" />
+    <Content Include="Source\jotters\_IGP0412.jpg" />
+    <Content Include="Source\jotters\_IGP0413.jpg" />
+    <Content Include="Source\jotters\_IGP0420.jpg" />
+    <Content Include="Source\jotters\_IGP0537.jpg" />
+    <Content Include="Source\jotters\_IGP0539.jpg" />
+    <Content Include="Source\jotters\_IGP0676.jpg" />
+    <Content Include="Source\jotters\_IGP0679.jpg" />
+    <Content Include="Source\Little\diarys\B_1.png" />
+    <Content Include="Source\Little\diarys\B_2.png" />
+    <Content Include="Source\Little\diarys\B_3.png" />
+    <Content Include="Source\Little\diarys\B_4.png" />
+    <Content Include="Source\Little\diarys\B_5.png" />
+    <Content Include="Source\Little\diarys\Pic_1.png" />
+    <Content Include="Source\Little\diarys\Pic_3.png" />
+    <Content Include="Source\Little\diarys\Pic_4.png" />
+    <Content Include="Source\Little\diarys\Pic_5.png" />
+    <Content Include="Source\Little\diarys\_IGP0426.jpg" />
+    <Content Include="Source\Little\folders\_IGP0489.jpg" />
+    <Content Include="Source\Little\folders\_IGP0544.jpg" />
+    <Content Include="Source\Little\folders\_IGP0556.jpg" />
+    <Content Include="Source\Little\folders\_IGP0561.jpg" />
+    <Content Include="Source\Little\folders\_IGP0565.jpg" />
+    <Content Include="Source\Little\folders\_IGP0576.jpg" />
+    <Content Include="Source\Little\folders\_IGP0580.jpg" />
+    <Content Include="Source\Little\jotters\casual 1.png" />
+    <Content Include="Source\Little\jotters\casual 2.png" />
+    <Content Include="Source\Little\jotters\casual 3.png" />
+    <Content Include="Source\Little\jotters\casual 4.png" />
+    <Content Include="Source\Little\jotters\_IGP0412.jpg" />
+    <Content Include="Source\Little\jotters\_IGP0413.jpg" />
+    <Content Include="Source\Little\jotters\_IGP0420.jpg" />
+    <Content Include="Source\Little\jotters\_IGP0537.jpg" />
+    <Content Include="Source\Little\jotters\_IGP0539.jpg" />
+    <Content Include="Source\Little\jotters\_IGP0676.jpg" />
+    <Content Include="Source\Little\jotters\_IGP0679.jpg" />
     <Content Include="Source\MainPageLogo.jpg" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -262,8 +308,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Source\folders\" />
-    <Folder Include="Source\jotters\" />
+    <Folder Include="Source\Little\notebooks\" />
     <Folder Include="Source\NoteBooks\" />
   </ItemGroup>
   <ItemGroup>
