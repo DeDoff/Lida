@@ -18,9 +18,16 @@
 
 .scrol {
     overflow-y: scroll;
-    overflow-x: hidden;
+    overflow-x: auto;
+    border-bottom: none;
+    padding-bottom: 1px;
+    height: 100%;
 }
-
+pre-scrollable{
+    border-bottom: none;
+    padding-bottom: 1px;
+    height: 100%;
+}
 ::-webkit-scrollbar {
     display: none;
 }
@@ -38,7 +45,7 @@
 
 .courusel {
     width: 75px;
-    height: inherit;
+    height: auto;
 }
 
 .Icon {
@@ -81,9 +88,9 @@ textarea {
     max-width: 280px;
 }
 
-.FotterPading {
+/*.FotterPading {
     padding-bottom: 20px;
-}
+}*/
 
 img {
     max-height: inherit;
@@ -113,7 +120,7 @@ hr {
     padding-right: 0;
     font-size: large;
     color: white;
-    letter-spacing: 5px;
+    letter-spacing: 5px;    
 }
 
 .Text {

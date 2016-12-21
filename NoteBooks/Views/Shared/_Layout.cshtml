@@ -7,8 +7,8 @@
 
     <title>@ViewBag.Title БЛОКНОТЫ</title>
 
-    
-   
+
+
 
     @Styles.Render("~/Content/Site.css")
     @Styles.Render("~/Content/font-awesome.css")
@@ -23,7 +23,7 @@
 <body class="body">
 
     <div class="navbar-header navbar-fixed-top">
-        
+
         <div class="navbar  navbar-inverse navbar-collapse collapse">
             <div class="container">
                 <div class="row"> </div>
@@ -40,37 +40,37 @@
         </div>
     </div>
 
-    <div class="container">
-        <div class="navbar-fixed-bottom">
 
-            <div class="row body-content text-center">
-                <a class="btn Icon">
-                    <i class="fa fa-3x fa-facebook-official" aria-hidden="true"></i>
-                </a>
-                <a class="btn Icon">
-                    <i class="fa fa-3x fa-vk" aria-hidden="true"></i>
-                </a>
+    <div class="navbar-fixed-bottom">
 
-                <a class="btn Icon">
-                    <i class="fa fa-3x fa-instagram" aria-hidden="true"></i>
-                </a>
+        <div class="row body-content text-center">
+            <a class="btn Icon">
+                <i class="fa fa-3x fa-facebook-official" aria-hidden="true"></i>
+            </a>
+            <a class="btn Icon">
+                <i class="fa fa-3x fa-vk" aria-hidden="true"></i>
+            </a>
 
-                <a class="btn Icon">
-                    <i class="fa fa-3x fa-envelope-o" aria-hidden="true"></i>
-                </a>
+            <a class="btn Icon">
+                <i class="fa fa-3x fa-instagram" aria-hidden="true"></i>
+            </a>
 
-                <a class="btn Icon">
-                    <i class="fa fa-3x fa-skype" aria-hidden="true"></i>
-                </a>
-                <a class="btn Icon">
-                    <i class="fa fa-3x fa-phone-square" aria-hidden="true"></i>
-                </a>
-            </div>
-            
-            <div class="navbar-inverse row text-center LogoBottom">
-                Скажи мне, какой у тебя блокнот и я скажу кто ты
-            </div>
+            <a class="btn Icon">
+                <i class="fa fa-3x fa-envelope-o" aria-hidden="true"></i>
+            </a>
+
+            <a class="btn Icon">
+                <i class="fa fa-3x fa-skype" aria-hidden="true"></i>
+            </a>
+            <a class="btn Icon">
+                <i class="fa fa-3x fa-phone-square" aria-hidden="true"></i>
+            </a>
         </div>
+
+        <div class="navbar-inverse row text-center LogoBottom">
+            Скажи мне, какой у тебя блокнот и я скажу кто ты
+        </div>
+
     </div>
 
 
@@ -78,7 +78,7 @@
     @RenderBody()
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
-    
+
     @RenderSection("scripts", required: false)
 </body>
 </html>

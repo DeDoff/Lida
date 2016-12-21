@@ -268,7 +268,25 @@
     <Content Include="Source\Little\jotters\_IGP0539.jpg" />
     <Content Include="Source\Little\jotters\_IGP0676.jpg" />
     <Content Include="Source\Little\jotters\_IGP0679.jpg" />
+    <Content Include="Source\Little\notebooks\1.jpg" />
+    <Content Include="Source\Little\notebooks\2.jpg" />
+    <Content Include="Source\Little\notebooks\3.jpg" />
+    <Content Include="Source\Little\notebooks\4.jpg" />
+    <Content Include="Source\Little\notebooks\_IGP0437.jpg" />
+    <Content Include="Source\Little\notebooks\_IGP0470.jpg" />
+    <Content Include="Source\Little\notebooks\_IGP0472.jpg" />
+    <Content Include="Source\Little\notebooks\_IGP0895.jpg" />
+    <Content Include="Source\Little\notebooks\_IGP0898.jpg" />
     <Content Include="Source\MainPageLogo.jpg" />
+    <Content Include="Source\NoteBooks\1.jpg" />
+    <Content Include="Source\NoteBooks\2.jpg" />
+    <Content Include="Source\NoteBooks\3.jpg" />
+    <Content Include="Source\NoteBooks\4.jpg" />
+    <Content Include="Source\NoteBooks\_IGP0437.jpg" />
+    <Content Include="Source\NoteBooks\_IGP0470.jpg" />
+    <Content Include="Source\NoteBooks\_IGP0472.jpg" />
+    <Content Include="Source\NoteBooks\_IGP0895.jpg" />
+    <Content Include="Source\NoteBooks\_IGP0898.jpg" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -305,11 +323,10 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Home\Gallery.cshtml" />
     <Content Include="Views\Home\Product.cshtml" />
+    <Content Include="Views\Home\Diarys.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Source\Little\notebooks\" />
-    <Folder Include="Source\NoteBooks\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

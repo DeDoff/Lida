@@ -38,5 +38,11 @@ namespace NoteBooks.Controllers
 
             return View();
         }
+        public ActionResult Diarys()
+        {
+            ViewBag.Message = "Diarys";
+
+            return View();
+        }
     }
 }
