@@ -39,8 +39,9 @@
             </div>
         </div>
     </div>
-
-
+    <div class="FotterPading">
+        @RenderBody()
+    </div>
     <div class="navbar-fixed-bottom">
 
         <div class="row body-content text-center">
@@ -68,14 +69,16 @@
         </div>
 
         <div class="navbar-inverse row text-center LogoBottom">
-            Скажи мне, какой у тебя блокнот и я скажу кто ты
+            Встречи людей с их вещами
+            <br />
+            <p></p>
         </div>
 
     </div>
 
 
 
-    @RenderBody()
+    
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
 

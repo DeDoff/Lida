@@ -23,10 +23,9 @@
     padding-bottom: 1px;
     height: 100%;
 }
-pre-scrollable{
-    border-bottom: none;
-    padding-bottom: 1px;
-    height: 100%;
+.pre-scrollable{
+    /*max-height: 90%;*/
+    padding-bottom: 40px;
 }
 ::-webkit-scrollbar {
     display: none;
@@ -88,9 +87,9 @@ textarea {
     max-width: 280px;
 }
 
-/*.FotterPading {
-    padding-bottom: 20px;
-}*/
+.FotterPading {
+    padding-bottom: 25px;
+}
 
 img {
     max-height: inherit;
@@ -118,9 +117,10 @@ hr {
     padding-top: 5px;
     padding-left: 0;
     padding-right: 0;
-    font-size: large;
+    font-size: x-large;
     color: white;
     letter-spacing: 5px;    
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .Text {
