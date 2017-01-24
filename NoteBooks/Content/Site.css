@@ -1,5 +1,6 @@
 ﻿body {
-    padding-bottom: 10px;
+    /*padding-bottom: 10px;*/
+    height:inherit;
 }
 
 .body-content {
@@ -13,20 +14,30 @@
 
 .body {
     background-color: white;
-    padding-bottom: 10px;
+    /*padding-bottom: 10px;*/
+}
+
+.Page{
+    height:80%;
+    max-height:80%;
+    padding-bottom: 20px;
 }
 
 .scrol {
     overflow-y: scroll;
     overflow-x: auto;
     border-bottom: none;
-    padding-bottom: 1px;
-    height: 100%;
+    padding-bottom: 0px;
+    height: 70%;
+    max-height:70%;
+    
 }
+body, html{height:100%}
 .pre-scrollable{
-    /*max-height: 90%;*/
-    padding-bottom: 40px;
+    height:70%;
+    max-height:70%;
 }
+
 ::-webkit-scrollbar {
     display: none;
 }
@@ -35,6 +46,7 @@
     padding-top: 120px;
     padding-left: 75px;
     padding-right: 75px;
+    /*padding-bottom: 20px;*/
 }
 
 .navbar-nav {
@@ -87,10 +99,6 @@ textarea {
     max-width: 280px;
 }
 
-.FotterPading {
-    padding-bottom: 25px;
-}
-
 img {
     max-height: inherit;
     height: auto;
@@ -113,14 +121,24 @@ hr {
     letter-spacing: 10px;
 }
 
+a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.btn-block:hover {
+    color: yellow;
+}
+
+
 .LogoBottom {
     padding-top: 5px;
     padding-left: 0;
     padding-right: 0;
     font-size: x-large;
     color: white;
-    letter-spacing: 5px;    
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .Text {
@@ -134,22 +152,35 @@ hr {
     font-size: large;
 }
 
+.btn-block:checked {
+    color: forestgreen;
+}
+
+.ContactList:hover {
+    background: -moz-linear-gradient(top, #249ee4, #057cc0);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#249ee4), to(#057cc0));
+}
+
+.ContactList:focus {
+    color: yellow;
+    background: -moz-linear-gradient(top, #057cc0, #249ee4);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%,from(#057cc0), to(#249ee4));
+}
 
 .thumb img {
-    filter: none; 
+    filter: none;
     -webkit-filter: grayscale(0);
-    border-radius: 5px;
+    border-radius: 1px;
     background-color: #fff;
     /*border: 1px solid #ddd;*/
     border: none;
     padding: 5px;
-    
 }
 
-.thumb img:hover {
-    filter: gray; 
-    -webkit-filter: grayscale(1);
-}
+    .thumb img:hover {
+        filter: gray;
+        -webkit-filter: grayscale(1);
+    }
 
 .thumb {
     padding: 5px;
