@@ -17,62 +17,18 @@
 
 
 <body class="body">
-    <div class="container">
-        <div class="navbar-header navbar-fixed-top">
-            <div class="navbar  navbar-inverse navbar-collapse collapse">
-                <div class="container">
-                    <div class="row"> </div>
-                    <div class="col-sm-12 col-md-12 col-xs-12 col-lg-12 text-center Logo">
-                        <a class="nav navbar-nav NavbarPadding Logo" href="/home/Index">
-                            Эксклюзивные изделия из кожи
-                        </a>
-                    </div>
-                    <ul class="nav navbar-nav NavbarPadding">
-                        <li class="NavbarLi">@Html.ActionLink("О ПРОЕКТЕ", "About", "Home")</li>
-                        <li class="NavbarLi">@Html.ActionLink("ИЗДЕЛИЯ", "Product", "Home")</li>
-                        <li class="NavbarLi">@Html.ActionLink("ГАЛЕРЕЯ РАБОТ", "Gallery", "Home")</li>
-                        <li class="NavbarLi">@Html.ActionLink("КАК ЗАКАЗАТЬ", "Contact", "Home")</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+
+    <div class="navbar navbar-header navbar-fixed-top">
+        <ul class="nav navbar-nav NavbarPadding">
+            <li class="NavbarLi">@Html.ActionLink("О ПРОЕКТЕ", "About", "Home")</li>
+            <li class="NavbarLi">@Html.ActionLink("ИЗДЕЛИЯ", "Product", "Home")</li>
+            <li class="NavbarLi">@Html.ActionLink("ГАЛЕРЕЯ РАБОТ", "Gallery", "Home")</li>
+            <li class="NavbarLi">@Html.ActionLink("КАК ЗАКАЗАТЬ", "Contact", "Home")</li>
+        </ul>
     </div>
 
-    <div class="container">
-        <div class="navbar-fixed-bottom">
 
-            <div class="row body-content text-center">
-                <a class="btn Icon">
-                    <i class="fa fa-3x fa-facebook-official" aria-hidden="true"></i>
-                </a>
-                <a class="btn Icon">
-                    <i class="fa fa-3x fa-vk" aria-hidden="true"></i>
-                </a>
-
-                <a class="btn Icon">
-                    <i class="fa fa-3x fa-instagram" aria-hidden="true"></i>
-                </a>
-
-                <a class="btn Icon">
-                    <i class="fa fa-3x fa-envelope-o" aria-hidden="true"></i>
-                </a>
-
-                <a class="btn Icon">
-                    <i class="fa fa-3x fa-skype" aria-hidden="true"></i>
-                </a>
-                <a class="btn Icon">
-                    <i class="fa fa-3x fa-phone-square" aria-hidden="true"></i>
-                </a>
-            </div>
-
-            <div class="navbar-inverse row text-center LogoBottom">
-                Встречи людей с их вещами
-                <br />
-                <p></p>
-            </div>
-
-        </div>
-    </div>
+   
 
 
     @RenderBody()
