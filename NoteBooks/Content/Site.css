@@ -54,7 +54,7 @@ body, html{height:100%}
     padding-right: 15px;
     padding-left: 15px;
     /*background-color: whitesmoke;*/
-    color: black;
+    color: white;
 }
 
 
@@ -186,7 +186,9 @@ a:hover {
 }
 
 .Section3 {
-    background-color: #724c3a;
+    background: url('../Source/About.jpg'), no-repeat center fixed;
+    background-size:cover;
+    /*background-color: #724c3a;*/
 }
 .Section4 {
     background-color: #eae2e0;
