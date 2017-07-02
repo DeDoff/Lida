@@ -17,23 +17,28 @@
 
 
 <body class="body">
+    <div class="scrol pre-scrollable">
+        <div class="navbar navbar-header navbar-fixed-top">
+            <ul class="navbar-nav">
+                <li class="NavbarLi">
+                    @Html.ActionLink("Главная", "About", "Home")
+                </li>
+                <li class="NavbarLi">
+                    @Html.ActionLink("Галерея работ", "Product", "Home")
+                </li>
+                <li class="NavbarLi">
+                    @Html.ActionLink("Обо мне", "Gallery", "Home")
+                </li>
+                <li class="NavbarLi">
+                    @Html.ActionLink("Как заказать", "Contact", "Home")
+                </li>
+            </ul>
+        </div>
 
-    <div class="navbar navbar-header navbar-fixed-top">
-        <ul class="nav navbar-nav NavbarPadding">
-            <li class="NavbarLi">@Html.ActionLink("О ПРОЕКТЕ", "About", "Home")</li>
-            <li class="NavbarLi">@Html.ActionLink("ИЗДЕЛИЯ", "Product", "Home")</li>
-            <li class="NavbarLi">@Html.ActionLink("ГАЛЕРЕЯ РАБОТ", "Gallery", "Home")</li>
-            <li class="NavbarLi">@Html.ActionLink("КАК ЗАКАЗАТЬ", "Contact", "Home")</li>
-        </ul>
+        @RenderBody()
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @RenderSection("scripts", required: false)
     </div>
-
-
-   
-
-
-    @RenderBody()
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
 </body>
 </html>
