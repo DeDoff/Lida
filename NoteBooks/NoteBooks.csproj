@@ -271,6 +271,9 @@
     <Content Include="Source\Little\notebooks\_IGP0472.jpg" />
     <Content Include="Source\Little\notebooks\_IGP0895.jpg" />
     <Content Include="Source\Little\notebooks\_IGP0898.jpg" />
+    <Content Include="Source\Logo.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Source\MainPageLogo.jpg" />
     <Content Include="Source\NoteBooks\1.jpg" />
     <Content Include="Source\NoteBooks\2.jpg" />
