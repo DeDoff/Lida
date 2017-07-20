@@ -34,10 +34,14 @@
     display: inline;
     width: 100%;
     opacity: 0.4;
-    background-color: black;
+    background-color: darkgrey;
     height:50px;
 }
-
+.navText {
+    color: black;
+    opacity:1;
+    font-weight:500;
+}
 .courusel {
     width: 75px;
     height: auto;
@@ -48,7 +52,7 @@
     padding-right: 15px;
     padding-left: 15px;
     /*background-color: whitesmoke;*/
-    color: white;
+    color: black;
 }
 
 
@@ -57,7 +61,7 @@
     text-align: center;
     font-size: 28px;
     font-weight: 400;
-    color:black;
+    color:darkgray;
     opacity:1;
 }
 
@@ -173,21 +177,28 @@ a:hover {
     padding: 5px;
 }
 
+.TextContact{
+    font-size: x-large;
+}
+
 .Section1{
     background-color:#724c3a;
+    /*background: url('../Source/Logo.jpg'), no-repeat center fixed;
+    background-size:cover;*/
 }
 .Section2 {
     background-color:#eae2e0;
 }
 
 .Section3 {
-    background: url('../Source/About.jpg'), no-repeat center fixed;
-    background-size:cover;
-    /*background-color: #724c3a;*/
+    /*background: url('../Source/About.jpg'), no-repeat center fixed;
+    background-size:cover;*/
+    background-color: #724c3a;
 }
 .Section4 {
     background-color: #eae2e0;
 }
 .Section5 {
-    background-color: #44302a;
+    /*background-color: #44302a;*/
+    background-color: darkgray;
 }
