@@ -2,9 +2,9 @@
     ViewBag.Title = "Lidia Mechenite";
 }
 
-@*Главное фото с логотипом*@
 
-<div class="Section1">
+@*Главное фото с логотипом*@
+<div class="Section1" id="Section1">
     <div class="row">
         <div class="col-lg-offset-3 col-lg-6 text-center">
             <img src="~/Source/Logo.jpg" alt="Logo" class="img-rounded img-responsive" />
@@ -13,35 +13,35 @@
 </div>
 
 @*Галерея работ-проектов*@
-<div class="Section2">
+<div class="Section2" id="Section2">
     <div class="container">
+        <br />
         <div class="row text-center SectionName">
             <p>Галерея</p>
         </div>
-
+        <br />
         @*Часть 1*@
         <div class="row">
             <ul class="media-list main-list">
-                <li class="media col-sm-4">
-                    <img class="img-responsive" src="~/Source/diarys/B_1.png" alt="...">
+                <li class="col-sm-5">
+                    <img class="img img-responsive" src="~/Source/1Block/1.jpg" alt="..." style="width:100%; height:100%">
                     <br />
-                    <img class="img-responsive" src="~/Source/diarys/B_2.png" alt="...">
+                    <img class="img img-responsive" src="~/Source/1Block/2.jpg" alt="..." style="width:100%; height:100%">
                 </li>
-                <li class="col-sm-8">
+                <li class="col-sm-7">
                     <ul class="media-list">
-                        <li class="media col-sm-4">
-                            <img class="img-responsive" src="~/Source/folders/_IGP0489.jpg" alt="...">
+                        <li class="col-sm-4">
+                            <img class="img img-responsive" src="~/Source/1Block/3.jpg" alt="...">
                         </li>
-                        <li class="media col-sm-4">
-                            <img class="img-responsive" src="~/Source/folders/_IGP0489.jpg" alt="...">
+                        <li class="col-sm-4">
+                            <img class="img img-responsive" src="~/Source/1Block/4.jpg" alt="...">
                         </li>
-                        <li class="media col-sm-4">
-                            <img class="img-responsive" src="~/Source/folders/_IGP0580.jpg" alt="...">
-
+                        <li class="col-sm-4">
+                            <img class="img img-responsive" src="~/Source/1Block/5.jpg" alt="...">
                         </li>
                         <li class="media col-sm-12">
                             <br />
-                            <img class="img-responsive" src="~/Source/diarys/Pic_5.png" alt="...">
+                            <img class="img-responsive" src="~/Source/1Block/6.jpg" alt="...">
                         </li>
                     </ul>
                 </li>
@@ -81,12 +81,14 @@
             Здесь дожны быть остальные работы из галереи
         </p>
     </div>
+    <br />
 </div>
 
 
 @*Обо мне*@
-<div class="Section3">
+<div class="Section3" id="Section3">
     <div class="container">
+        <br />
         <div class="row text-center SectionName">
             <p>Обо мне</p>
         </div>
@@ -112,15 +114,18 @@
             </div>
         </div>
     </div>
+    <br />
 </div>
 
+
 @*Как заказать*@
-<div class="Section4">
+<div class="Section4" id="Section4">
     <div class="container">
+        <br />
         <div class="row text-center SectionName">
             <p>Как заказать</p>
         </div>
-
+        <br />
         <div class="col-sm-7 TextContact">
             <p>
                 Просто напишите или позвоните мне и сообщите о своем желании приобрести изделие.
@@ -135,19 +140,19 @@
         <div class="col-sm-5">
             <div class="form-group">
                 <div class="col-sm-12">
-                    <input type="text" class="form-control" placeholder="Имя">
+                    <input type="text" class="form-control" placeholder="Имя" id="tbName">
                 </div>
                 <br />
                 <div class="col-sm-12">
-                    <input type="text" class="form-control" placeholder="Электронный адрес">
+                    <input type="text" class="form-control" placeholder="Электронный адрес" id="tbMail">
                 </div>
                 <br />
                 <div class="col-sm-12">
-                    <textarea class="form-control" rows="3" placeholder="Сообщение"></textarea>
+                    <textarea class="form-control" rows="3" placeholder="Сообщение" id="tbMessage"></textarea>
                 </div>
                 <br />
                 <div class="col-sm-10">
-                    <button type="submit" class="btn btn-success form-control">Отправить</button>
+                    <button type="submit" class="btn btn-success form-control" id="sendMailBtn" onclick="sendMail(); return false">Отправить</button>
                 </div>
             </div>
         </div>
@@ -156,32 +161,131 @@
     <br />
 </div>
 
+<script>
+    $(document).ready(function () {
+        $("#sendMailBtn").click(function () {
+            $('#sendMailModal').modal('show');
+        });
+    });
+</script>
+<div class="modal fade" id="sendMailModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a href="#" class="close" data-dismiss="modal">&times;</a>
+                <h3 class="modal-title text-center">Ваше сообщение отправлено</h3>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function sendMail() {
+        var link = "mailto:max_imk@mail.ru"
+                 + "?cc=" + escape(document.getElementById('tbMail').value)
+                 + "&subject=" + escape(document.getElementById('tbName').value)
+                 + "&body=" + escape(document.getElementById('tbMessage').value)
+        ;
+
+        window.location.href = link;
+    }
+</script>
+
 @*Контакты в соцсетях*@
 <div class="Section5">
     <div class="container">
         <div class="row body-content text-center">
-            <a class="btn Icon">
+            <a href="https://www.facebook.com/groups/mechenite/" class="btn Icon" target="_blank">
                 <i class="fa fa-3x fa-facebook-official" aria-hidden="true"></i>
             </a>
-            <a class="btn Icon">
+            <a href="https://vk.com/mechenite" class="btn Icon" target="_blank">
                 <i class="fa fa-3x fa-vk" aria-hidden="true"></i>
             </a>
-
-            <a class="btn Icon">
+            <a class="btn Icon" id="instagramBtn">
                 <i class="fa fa-3x fa-instagram" aria-hidden="true"></i>
             </a>
 
-            <a class="btn Icon">
+            <a class="btn Icon" id="mailBtn">
                 <i class="fa fa-3x fa-envelope-o" aria-hidden="true"></i>
             </a>
 
-            <a class="btn Icon">
+            <a class="btn Icon" id="skypeBtn">
                 <i class="fa fa-3x fa-skype" aria-hidden="true"></i>
             </a>
-            <a class="btn Icon">
+            <a class="btn Icon" id="phoneBtn">
                 <i class="fa fa-3x fa-phone-square" aria-hidden="true"></i>
             </a>
         </div>
     </div>
 </div>
 
+<script>
+    $(document).ready(function () {
+        $("#instagramBtn").click(function () {
+            $('#instagramModal').modal('show');
+        });
+    });
+</script>
+<div class="modal fade" id="instagramModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a href="#" class="close" data-dismiss="modal">&times;</a>
+                <h3 class="modal-title text-center">Я скоро заведу инстаграм =)</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+        $(document).ready(function () {
+            $("#mailBtn").click(function () {
+                $('#mailModal').modal('show');
+            });
+        });
+</script>
+<div class="modal fade" id="mailModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a href="#" class="close" data-dismiss="modal">&times;</a>
+                <h3 class="modal-title text-center">Mechenite@yandex.ru</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+        $(document).ready(function () {
+            $("#skypeBtn").click(function () {
+                $('#skypeModal').modal('show');
+            });
+        });
+</script>
+<div class="modal fade" id="skypeModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a href="#" class="close" data-dismiss="modal">&times;</a>
+                <h3 class="modal-title text-center">Skype</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+        $(document).ready(function () {
+            $("#phoneBtn").click(function () {
+                $('#phoneModal').modal('show');
+            });
+        });
+</script>
+<div class="modal fade" id="phoneModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a href="#" class="close" data-dismiss="modal">&times;</a>
+                <h3 class="modal-title text-center">+375-29-111-11-11</h3>
+            </div>
+        </div>
+    </div>
+</div>

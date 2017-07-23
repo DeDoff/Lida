@@ -35,7 +35,7 @@
     width: 100%;
     opacity: 0.4;
     background-color: darkgrey;
-    height:50px;
+    height:40px;
 }
 .navText {
     color: black;
@@ -147,7 +147,7 @@ a:hover {
     color: forestgreen;
 }
 
-.ContactList:hover {
+/*.ContactList:hover {
     background: -moz-linear-gradient(top, #249ee4, #057cc0);
     background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#249ee4), to(#057cc0));
 }
@@ -156,7 +156,7 @@ a:hover {
     color: yellow;
     background: -moz-linear-gradient(top, #057cc0, #249ee4);
     background: -webkit-gradient(linear, 0% 0%, 0% 100%,from(#057cc0), to(#249ee4));
-}
+}*/
 
 .thumb img {
     filter: none;

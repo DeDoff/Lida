@@ -12,37 +12,5 @@ namespace NoteBooks.Controllers
         {
             return View();
         }
-
-        public ActionResult About()
-        {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
-        }
-        public ActionResult Gallery()
-        {
-            ViewBag.Message = "Gallery";
-
-            return View();
-        }
-        public ActionResult Product()
-        {
-            ViewBag.Message = "Product";
-
-            return View();
-        }
-        public ActionResult Diarys()
-        {
-            ViewBag.Message = "Diarys";
-
-            return View();
-        }
     }
 }
