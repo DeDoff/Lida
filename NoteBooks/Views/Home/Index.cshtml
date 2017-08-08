@@ -1,4 +1,5 @@
-﻿@{
+﻿@using NoteBooks.Models
+@{
     ViewBag.Title = "Lidia Mechenite";
 }
 
@@ -373,7 +374,7 @@
         <div class="row text-center SectionName">
             <p>Обо мне</p>
         </div>
-        <div class="col-sm-9">
+        <div class="col-sm-9 col-md-7">
             <div class="row TextContact">
                 <p>
                     &emsp;&nbsp;Однажды я поняла, что сущность человека отражается во всем, к чему он прикасается. Все, абсолютно все вещи, которыми окружает себя их хозяин, что-то о нем рассказывают. И наоборот, мы интуитивно стремимся найти "свои" вещи, "своих" людей.
@@ -397,40 +398,42 @@
 @*Как заказать*@
 <div class="Section4" id="Section4">
     <div class="container">
-        <br />
-        <div class="row text-center SectionName">
-            <p>Как заказать</p>
-        </div>
-        <br />
-        <div class="col-sm-12 TextContact">
-            <p>
-                &emsp;&nbsp;Просто напишите или позвоните мне и сообщите о своем желании приобрести изделие.
-            </p>
-            <p>
-                &emsp;&nbsp;После того, как мы с вами обсудим основную концепцию и детали, я подготовлю эскиз.
-            </p>
-            <p>
-                &emsp;&nbsp;Для изготовления мне нужно от 1 до 4 недель в зависимости от сложности работы.
-            </p>
-        </div>
-        <br />
-        <br />
-        <div class="col-sm-12">
-            <div class="form-group">
-                <div class="col-sm-12">
-                    <input type="text" class="form-control" placeholder="Имя" id="tbName" style="max-width:unset">
-                </div>
-                <br />
-                <div class="col-sm-12">
-                    <input type="text" class="form-control" placeholder="Телефон или Электронный адрес" id="tbMail" style="max-width:unset">
-                </div>
-                <br />
-                <div class="col-sm-12">
-                    <textarea class="form-control" rows="3" placeholder="Сообщение" id="tbMessage" style="max-width:unset"></textarea>
-                </div>
-                <br />
-                <div class="col-sm-12">
-                    <button type="submit" class="btn btn-success form-control" id="sendMailBtn" style="max-width:unset" onclick="sendMail(); return false">Отправить</button>
+        <div class="col-sm-offset-1 col-sm-9">
+            <br />
+            <div class="row text-center SectionName">
+                <p>Как заказать</p>
+            </div>
+            <br />
+            <div class="col-sm-12 TextContact">
+                <p>
+                    &emsp;&nbsp;Просто напишите или позвоните мне и сообщите о своем желании приобрести изделие.
+                </p>
+                <p>
+                    &emsp;&nbsp;После того, как мы с вами обсудим основную концепцию и детали, я подготовлю эскиз.
+                </p>
+                <p>
+                    &emsp;&nbsp;Для изготовления мне нужно от 1 до 4 недель в зависимости от сложности работы.
+                </p>
+            </div>
+            <br />
+            <br />
+            <div class="col-sm-12">
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <input type="text" class="form-control" placeholder="Имя" id="tbName" style="max-width:unset" required>
+                    </div>
+                    <br />
+                    <div class="col-sm-12">
+                        <input type="text" class="form-control" placeholder="Телефон или Электронный адрес" id="tbMail" style="max-width:unset" required>
+                    </div>
+                    <br />
+                    <div class="col-sm-12">
+                        <textarea class="form-control" rows="5" placeholder="Сообщение" id="tbMessage" style="max-width:unset" required></textarea>
+                    </div>
+                    <br />
+                    <div class="col-sm-12">
+                        <button type="submit" class="btn btn-success form-control" id="sendMailBtn" style="max-width:unset" onclick="sendMail(); return false">Отправить</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -442,31 +445,41 @@
 <script>
     $(document).ready(function () {
         $("#sendMailBtn").click(function () {
-            $('#sendMailModal').modal('show');
+            var inpObj = document.getElementById("id1");
+            if ($("#tbName").val() == '' || $("#tbMail").val() == '' || $("#tbMessage").val() == '') {
+                alert('Заполните все поля');
+            }
+            else {
+                var message = { Name: $("#tbName").val(), ContactData: $("#tbMail").val(), Text: $("#tbMessage").val() };
+
+                $.ajax({
+                    type: "POST",
+                    url: "/Home/SendMessage",
+
+                    data: JSON.stringify(message),
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    success: function (data) {
+                        $("#tbMessage").val("");;
+                    }
+                });
+                $('#sendMailModal').modal('show');
+            }
         });
     });
 </script>
 <div class="modal fade" id="sendMailModal">
-    <div class="modal-dialog">
+    <div class="modal-dialog" style="padding-top:20%">
         <div class="modal-content">
             <div class="modal-header">
                 <a href="#" class="close" data-dismiss="modal">&times;</a>
-                <h3 class="modal-title text-center">Мы работаем над этим</h3>
+                <h3 class="modal-title text-center">Спасибо за сообщение</h3>
+                <h3 class="modal-title text-center">Я обязательно свяжусь с вами!</h3>
             </div>
         </div>
     </div>
 </div>
-@*<script>
-        function sendMail() {
-            var link = "mailto:max_imk@mail.ru"
-                     + "?cc=" + escape(document.getElementById('tbMail').value)
-                     + "&subject=" + escape(document.getElementById('tbName').value)
-                     + "&body=" + escape(document.getElementById('tbMessage').value)
-            ;
 
-            window.location.href = link;
-        }
-    </script>*@
 
 @*Контакты в соцсетях*@
 <div class="Section5">
@@ -497,11 +510,11 @@
 </div>
 
 <script>
-        $(document).ready(function () {
-            $("#mailBtn").click(function () {
-                $('#mailModal').modal('show');
-            });
+    $(document).ready(function () {
+        $("#mailBtn").click(function () {
+            $('#mailModal').modal('show');
         });
+    });
 </script>
 <div class="modal fade" id="mailModal">
     <div class="modal-dialog" style="padding-top:20%">
